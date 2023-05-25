@@ -1,6 +1,8 @@
+import { DisplaySection } from "./components/DisplaySection";
 import { Jumbotron } from "./components/Jumbotron";
 import { Nav } from "./components/Nav";
 import { SoundSection } from "./components/SoundSection";
+import { WebGiViewer } from "./components/WebGiViewer";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Nav />
       <Jumbotron />
       <SoundSection />
+      <DisplaySection />
+      <WebGiViewer />
     </div>
   );
 }
