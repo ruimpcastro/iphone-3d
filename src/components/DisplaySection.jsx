@@ -1,8 +1,7 @@
 import React from "react";
 
-export const DisplaySection = () => {
+export const DisplaySection = ({ triggerPreview }) => {
   const handleScrollToTop = () => {
-    const element = document.querySelector(".top-section");
     window.scrollTo({
       top: 0,
       left: 0,
@@ -17,7 +16,7 @@ export const DisplaySection = () => {
       <span className="description">
         A display that's up to 2x brighter in the sun.
       </span>
-      <button className="button" style={{ border: 0 }}>
+      <button className="button" style={{ border: 0 }} onClick={triggerPreview}>
         Try me!
       </button>
       <button className="back-button" onClick={handleScrollToTop}>
